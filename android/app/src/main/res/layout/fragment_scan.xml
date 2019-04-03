@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_dark">
+
+    <FrameLayout
+        android:id="@+id/appBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedIds">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rootRecognizerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <com.microblink.view.recognition.RecognizerRunnerView
+            android:id="@+id/recognizerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:mb_animateRotation="true"
+            custom:mb_animationDuration="250"
+            custom:mb_initialOrientation="portrait" />
+
+    </FrameLayout>
+
+</LinearLayout>
